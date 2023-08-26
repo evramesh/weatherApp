@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg {
+    background-image: url("https://res.cloudinary.com/dcr2fwzyk/image/upload/v1691211323/SL_042221_42420_02_ingfqt.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#showOut {
+    color: #02aaf2;
+}
+
+
+.search-container {
+    margin-bottom: 15px;
+    background: #fff;
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    /*box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    inset -7px -7px 10px 0px rgba(0,0,0,.1),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+   text-shadow:  0px 0px 6px rgba(255,255,255,.3),
+              -4px -4px 6px rgba(116, 125, 136, .2);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);*/
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+@media screen and (max-width:767px) {
+
+    .search-container {
+        width: 250px;
+    }
+
+    .img {
+        margin-left: 30px;
+    }
+}
+
+.search-container:hover>.search-input {
+    width: 400px;
+
+}
+
+.img {
+    height: 55px;
+    width: 70px;
+}
+
+
+
+
+
+
+
+.search-container .search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+
+
+}
+
+.search-container .search-btn .fas {
+    color: #38b6f5;
+
+
+
+
+}
+
+@keyframes hoverShake {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+
+    25% {
+        transform: skew(5deg, 5deg);
+    }
+
+    75% {
+        transform: skew(-5deg, -5deg);
+    }
+
+    100% {
+        transform: skew(0deg, 0deg);
+    }
+}
+
+.search-container:hover {
+    animation: hoverShake 0.15s linear 3;
+}
+
+.search-btn {
+    border: 2px solid #38b6f5;
+    border-radius: 9px;
+    width: 35px;
+    height: 25px;
+    background-color: transparent;
+
+}
+
+
+.clr {
+    font-family: Monospace;
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+.temparature {
+    font-size: 50px;
+    font-family: Monospace;
+    text-shadow: 3px 1px 0px rgba(46, 57, 55, 1);
+
+}
+
+
+
+
+
+
+
+
+
+/*border*/
+.sub-con {
+    margin-top: 20px;
+}
+
+
+.nov {
+    display: none;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    color: #fff;
+    background: white;
+    overflow: hidden;
+    border-top: 0px solid rgba(255, 49, 49, 0.5);
+    border-right: 0px solid rgba(25, 355, 255, 0.5);
+    border-bottom: 0px solid rgba(57, 255, 20, 0.5);
+    border-left: 0px solid rgba(455, 155, 113, 0.5);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+
+    box-shadow: 7px 10px 10px 2px rgba(20, 126, 168, 1);
+    border-radius: 10px;
+
+
+}
+
+.sub-container {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width:789px) {
+    .card {
+        width: 25em;
+    }
+
+    .temparature {
+        font-size: 70px;
+        margin: 0px;
+        margin-right: 25px;
+    }
+
+    .img {
+        height: 70px;
+        width: 90px;
+        margin-left: 40px;
+    }
+}
+
+span {
+    position: absolute;
+    border-radius: 100vmax;
+}
+
+.top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: linear-gradient(90deg,
+            transparent 50%,
+            rgba(255, 49, 49, 0.5),
+            rgb(2, 225, 225));
+}
+
+.bottom {
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: linear-gradient(90deg,
+            rgb(57, 255, 20),
+            rgba(57, 255, 20, 0.5),
+            transparent 50%);
+}
+
+.right {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(180deg,
+            transparent 30%,
+            rgba(0, 255, 255, 0.5),
+            rgb(282, 2522, 25));
+}
+
+.left {
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(180deg,
+            rgb(2, 255, 213),
+            rgba(255, 255, 113, 0.5),
+            transparent 70%);
+}
+
+.top {
+    animation: animateTop 3s ease-in-out infinite;
+}
+
+.bottom {
+    animation: animateBottom 3s ease-in-out infinite;
+}
+
+.right {
+    animation: animateRight 3s ease-in-out infinite;
+}
+
+.left {
+    animation: animateLeft 3s ease-in-out infinite;
+}
+
+@keyframes animateTop {
+    25% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    30%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animateBottom {
+
+    0%,
+    50% {
+        opacity: 0;
+        width: 0;
+    }
+
+    75% {
+        opacity: 1;
+        width: 100%;
+    }
+
+    76%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animateRight {
+
+    0%,
+    25% {
+        opacity: 0;
+        height: 0;
+    }
+
+    50% {
+        opacity: 1;
+        height: 100%;
+    }
+
+    55%,
+    100% {
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes animateLeft {
+
+    0%,
+    75% {
+        opacity: 0;
+        bottom: 0;
+        height: 0;
+    }
+
+    100% {
+        opacity: 1;
+        height: 100%;
+    }
+}
